@@ -1,24 +1,24 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
-
+import Schedule from "../components/Schedule.tsx";
 export default function Home() {
   return (
-    <>
+    <div class="h-screen">
       <Head>
         <title>Fresh App</title>
       </Head>
-      <div class="p-4 mx-auto max-w-screen-md">
-        <img
-          src="/logo.svg"
-          class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-        <p class="my-6">
-          Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-          file, and refresh.
-        </p>
-        <Counter start={3} />
-      </div>
-    </>
+      <main class="flex w-screen h-5/6">
+        <Schedule />
+      </main>
+      <footer class="bg-green-300 w-screen h-1/6">
+        <div class="p-4 w-full  ">
+          <img
+            src="/logo.svg"
+            class="w-32 h-32 ml-auto"
+            alt="the fresh logo: a sliced lemon dripping with juice"
+          />
+        </div>
+      </footer>
+    </div>
   );
 }
