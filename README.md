@@ -1,4 +1,4 @@
-# fresh project
+# Small scheduling site for home/personal use
 
 ### Usage
 
