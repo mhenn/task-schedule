@@ -3,18 +3,18 @@ import Counter from "../islands/Counter.tsx";
 import Schedule from "../components/Schedule.tsx";
 export default function Home() {
   return (
-    <div class="h-screen">
+    <div class="flex flex-col h-screen">
       <Head>
         <title>Fresh App</title>
       </Head>
-      <main class="flex w-screen h-5/6">
+      <main class="flex w-screen h-full ">
         <Schedule />
       </main>
-      <footer class="bg-green-300 w-screen h-1/6">
-        <div class="p-4 w-full  ">
+      <footer class="bg-green-300 w-screen h-24 mt-auto">
+        <div class="p-4 w-full h-full">
           <img
             src="/logo.svg"
-            class="w-32 h-32 ml-auto"
+            class="ml-auto my-auto w-20 h-20 "
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
         </div>
